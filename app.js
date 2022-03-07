@@ -40,7 +40,7 @@ app.get('/product', (req, res) => {
   res.status(200).send(product);
 });
 
-const port = 3000;
+const port =process.env.PORT || 3000;
 app.listen(port, function () {
   console.log('running');
 });
